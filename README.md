@@ -1,2 +1,7 @@
 # exvasco
-exercício criado pelo Vasco
+
+Install node_modules and project dependencies
+
+```
+$: npm install
+```
