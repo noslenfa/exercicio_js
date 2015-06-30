@@ -1,0 +1,45 @@
+Abstract: Pretende-se uma aplicação Web que permita a visualização das músicas favoritas de utilizadores. Todos os métodos suportados pela aplicação devem ser disponibilizados via API REST.
+
+1) API REST
+
+-Nesta parte do projecto vais usar node.js. Tens de fazer algo identico ao que fizemos no fim de semana com o gulp, criar um ficheiro que te corra um script e te va buscar informação de utilizadores e musicas.
+
+-Para isso podes usar o expressjs parte de routing (http://expressjs.com/guide/routing.html) para criar endpoints que te devolvam informação para aplicaçao cliente a partir dos ficheiros que te envio. E a biblioteca request (https://github.com/request/request) para fazer pedidos get aos ficheiros que te mando em anexo, coloca-os no github e abre o parte do "raw" desses ficheiros para poderes fazer pedidos à vontade.
+
+
+-Caso nao saibas o que é Rest: O que é Rest (https://en.wikipedia.org/wiki/Representational_state_transfer) so precisas de ler os primeiros 3 paragrafos, caso queiras aprofundar mais procura outras sources.
+
+############################
+
+
+2) Aplicação Web
+2.1) Página com listagem de utilizadores
+2.2) Página com listagem de músicas
+
+Esta aplicação Web usas o que usamos no fds. HTML5, Bootstrap, Javascript (Jquery). 
+Basicamente tens de fazer pedidos ao servidor que criast a partir do exercicio em cima para ir buscar a informação para listar.
+Tenta separar os ficheiros Javascript um para utilizadores outro para musicas. 
+
+Tenta também usar a abordagem de classes que aprendeste na tua formação de java e implementa-la em javascript (algumas dicas: http://www.w3schools.com/js/js_object_prototypes.asp, http://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/). Aqui e provavel que tenhas bastantes duvidas por isso vai me perguntando, mas se pensares na abordagem de classes de java vais perceber esta abordagem de prototyping de javascript. E tem de ser responsivo. Sente-te à vontade para inventares um design.
+
+Cria tambem paginas html distintas para cada um deles, ou seja, users.html e musics.html. O menu tem de ser igual nas duas, com hiperligações.
+
+############################
+
+3) Parser Json
+3.2) O pedido ao url http://freemusicarchive.org/recent.json  devolve uma lista de tracks (aTracks) com título artista e álbum.
+
+Neste ultimo exercicio apenas quero que uses esse url para ir buscar a lista de tracks guardares num array javascript, em formato json e depois listares todas as tracks numa tabela ou lista como quiseres. Quando tiveres tudo listado tens de criar um script, que quando carregas numa das linhas da tabela/lista ele te apague essa linha tanto no html como no array.
+
+Quando carregas numa das linhas vais ter de verificar se essa linha existe no array (comparando um campo à tua escolha desse objecto, ve o formato do json e escolhe logo um campo para te identificar a musica no html) tipo: 
+
+<li id="<campo_que_escolheres>"></li>
+
+assim é mais facil, porque vais ter de verificar se esse valor existe no array ou não. Tenta fazer a pesquisa no array com recursividade e so depois com for ;)
+
+Esta parte deve ser adicionada ao exercicio anterior como uma pagina tipo a dos users e musicas.
+
+Notas:
+A) O Servidor deve ser uma pasta a parte da aplicação
+B) Usa sempre package.json tanto no servidor como na aplicação web
+C) Usa o gulp para criar um webserver para aplicação (2º exercicio)

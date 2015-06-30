@@ -1,0 +1,31 @@
+[
+{
+	"id" : "1"
+	"username" : "Nelson Amaral",
+	"Age" : 32	
+},
+{
+
+	"id" : "2"
+	"username" : "Vasco Amaral",
+	"Age" : 25	
+},
+{
+
+	"id" : "3"
+	"username" : "Manuel Amaral",
+	"Age" : 63	
+},
+{
+
+	"id" : "4"
+	"username" : "Daniela Amaral",
+	"Age" : 30	
+},
+{
+
+	"id" : "4"
+	"username" : "Maria Amaral",
+	"Age" : 63	
+}
+]
