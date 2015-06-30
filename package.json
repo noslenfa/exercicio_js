@@ -1,0 +1,11 @@
+{
+  "name": "ExVasco",
+  "version": "1.0.0",
+  "description": "Install dependencies",
+  "author": "Nelson Amaral <noslenfa@gmail.com>",
+
+"dependencies": {
+	"gulp": "3.9.0",
+	"express": "4.13.0"
+  }
+}

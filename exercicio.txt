@@ -6,6 +6,8 @@ Abstract: Pretende-se uma aplicação Web que permita a visualização das músi
 
 -Para isso podes usar o expressjs parte de routing (http://expressjs.com/guide/routing.html) para criar endpoints que te devolvam informação para aplicaçao cliente a partir dos ficheiros que te envio. E a biblioteca request (https://github.com/request/request) para fazer pedidos get aos ficheiros que te mando em anexo, coloca-os no github e abre o parte do "raw" desses ficheiros para poderes fazer pedidos à vontade.
 
+	- https://raw.githubusercontent.com/noslenfa/exvasco/master/musics.json
+	- https://raw.githubusercontent.com/noslenfa/exvasco/master/users.json
 
 -Caso nao saibas o que é Rest: O que é Rest (https://en.wikipedia.org/wiki/Representational_state_transfer) so precisas de ler os primeiros 3 paragrafos, caso queiras aprofundar mais procura outras sources.
 
