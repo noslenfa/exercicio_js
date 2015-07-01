@@ -4,10 +4,8 @@
   "description": "Install dependencies",
   "author": "Nelson Amaral <noslenfa@gmail.com>",
   "dependencies": {
-    "bootstrap": "^3.3.5",
     "bower": "^1.4.1",
     "express": "4.13.0",
-    "jquery": "^2.1.4",
     "request": "2.58.0"
   }
 }
