@@ -1,1 +1,16 @@
+.nav-center {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	display: inline-block;
+}
 
+.next-nav {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	display: inline-block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}

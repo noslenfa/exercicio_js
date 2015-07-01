@@ -1,4 +1,4 @@
-var final_url = "https://raw.githubusercontent.com/noslenfa/exvasco/master/users.json";
+var final_url = "https://raw.githubusercontent.com/noslenfa/exvasco/master/musics.json";
 $.get(final_url).done( function(data) {
             var jsondata = JSON.parse(data)
             for (var i = 0 ; i < jsondata.length ; i++){
@@ -8,6 +8,5 @@ $.get(final_url).done( function(data) {
 });
 
 var show_html = function (jsondata, i) {
-    $(".users").append("<tr><td>" + jsondata[i].id + "</td><td>" + jsondata[i].username + "</td><td>" + jsondata[i].age + "</td></tr>");
+    $(".musics").append("<tr><td>" + jsondata[i].id + "</td><td>" + jsondata[i].title + "</td><td>" + jsondata[i].artist + "</td></tr>");
 }
-

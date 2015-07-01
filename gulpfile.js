@@ -6,3 +6,9 @@ gulp.task('copyjs', function() {
    .pipe(rename({dirname: ''}))
    .pipe(gulp.dest('js'));
 });
+
+gulp.task('copycss', function() {
+   gulp.src(['bower_components/**/dist/*.min.css', 'bower_components/**/dist/css/*.min.css'])
+   .pipe(rename({dirname: ''}))
+   .pipe(gulp.dest('css'));
+});
