@@ -1,31 +1,31 @@
 [
 {
-	"id" : "1"
+	"id" : "1",
 	"username" : "Nelson Amaral",
-	"Age" : 32	
+	"age" : 32	
 },
 {
 
-	"id" : "2"
+	"id" : "2",
 	"username" : "Vasco Amaral",
-	"Age" : 25	
+	"age" : 25	
 },
 {
 
-	"id" : "3"
+	"id" : "3",
 	"username" : "Manuel Amaral",
-	"Age" : 63	
+	"age" : 63	
 },
 {
 
-	"id" : "4"
+	"id" : "4",
 	"username" : "Daniela Amaral",
-	"Age" : 30	
+	"age" : 30	
 },
 {
 
-	"id" : "4"
+	"id" : "5",
 	"username" : "Maria Amaral",
-	"Age" : 63	
+	"age" : 63	
 }
 ]

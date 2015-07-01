@@ -6,6 +6,8 @@
   "dependencies": {
     "bower": "^1.4.1",
     "express": "4.13.0",
+    "gulp": "^3.9.0",
+    "gulp-rename": "1.2.2",
     "request": "2.58.0"
   }
 }
