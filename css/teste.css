@@ -1,0 +1,32 @@
+body {
+  font-family: "Roboto",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+.banner {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(255,255,255,0.7);
+  padding-bottom: 10px;
+}
+
+.pabs {
+  position: absolute;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.hauto {
+  height: auto;
+}
+
+img {
+  vertical-align: middle;
+}

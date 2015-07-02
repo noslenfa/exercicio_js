@@ -1,4 +1,4 @@
-var final_url = "localhost:8000/users";
+var final_url = "http://localhost:8000/users";
 $.get(final_url).done( function(data) {
             var jsondata = JSON.parse(data)
             for (var i = 0 ; i < jsondata.length ; i++){
