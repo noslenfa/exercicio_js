@@ -29,7 +29,12 @@ Cria tambem paginas html distintas para cada um deles, ou seja, users.html e mus
 ############################
 
 3) Parser Json
-3.2) O pedido ao url http://freemusicarchive.org/recent.json  devolve uma lista de tracks (aTracks) com título artista e álbum.
+3.2) O pedido ao url http://freemusicarchive.org/recent.json  devolve uma lista de tracks (aTracks) com:
+
+ "aTracks"
+- título - track_title
+- artista - artist_name
+- álbum - album_title
 
 Neste ultimo exercicio apenas quero que uses esse url para ir buscar a lista de tracks guardares num array javascript, em formato json e depois listares todas as tracks numa tabela ou lista como quiseres. Quando tiveres tudo listado tens de criar um script, que quando carregas numa das linhas da tabela/lista ele te apague essa linha tanto no html como no array.
 

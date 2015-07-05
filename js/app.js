@@ -29,6 +29,15 @@ app.get('/users', function (req, res) {
 	});	
 });
 
+app.get('/othermusics', function (req, res) {
+	
+	request('http://freemusicarchive.org/recent.json', function (error, response, body) {
+  		if (!error && response.statusCode == 200) {
+    	console.log(body);
+		res.send(body);
+  		}
+	});	
+});
 
 var server = app.listen(8000, function () {
 	var host = server.address().address;
