@@ -35,18 +35,20 @@ var show_html = function (aTracks, i) {
     i++;
 }
 
-$(document).on("click", ".musictable", function(){
-   var currentId = $(this).attr('track_id');
-   $(this).remove();
-   findAndRemove(jsonArray, 'track_id', currentId);
+$(document).on("click", ".musictable", function(e){
+    var currentId = $(this).attr('id');
+    $(this).remove();
+    console.log(jsonArray);
+    findAndRemove(jsonArray, 'id', currentId);
+    e.preventDefault();
 });
 
 function findAndRemove(jsonArray, property, value) {
    $.each(jsonArray, function(index, result) {
-      if(result[property] == value) {
+    if(result[property] == value) {
           //Remove from array
           jsonArray.splice(index, 1);
-          console.log(jsonArray);
+          
       }    
    });
 }
