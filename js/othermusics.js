@@ -17,10 +17,11 @@ var getData = function (i) {
     
     if (i < aTracks.length) {
         show_html(aTracks, i);
-        var jsonVar = "{track_id: '" + aTracks[i].track_id + "', artist_name: '" + aTracks[i].artist_name + "', track_title: '" + aTracks[i].track_title + "', album_title: '"  + aTracks[i].album_title + "'}";
-        jsonArray.push(jsonVar);
+        //var jsonVar = "{track_id: '" + aTracks[i].track_id + "', artist_name: '" + aTracks[i].artist_name + "', track_title: '" + aTracks[i].track_title + "', album_title: '"  + aTracks[i].album_title + "'}";
+        jsonArray.push(aTracks[i]);
         // console.log(jsonVar);
-        // console.log(jsonArray);
+        console.log(aTracks[i]);
+        console.log(jsonArray);
         i++
         getData(i);
         
