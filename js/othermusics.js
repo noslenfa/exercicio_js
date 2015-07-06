@@ -40,13 +40,17 @@ $(document).on("click", ".musictable", function(e){
     var currentId = $(this).attr('id');
     $(this).remove();
     console.log(jsonArray);
-    findAndRemove(jsonArray, 'id', currentId);
+    //findAndRemove(jsonArray, 'track_id', currentId);
+    findAndRemove(jsonArray, currentId);
     e.preventDefault();
 });
 
-function findAndRemove(jsonArray, property, value) {
-   $.each(jsonArray, function(index, result) {
-    if(result[property] == value) {
+//function findAndRemove(jsonArray, property, value) {
+function findAndRemove(jsonArray, value) {
+   $.each(jsonArray, function(index) {
+   //$.each(jsonArray, function(index, result) {
+    //if(result[property] == value) {
+    if($(this).attr('track_id') == value) {
           //Remove from array
           jsonArray.splice(index, 1);
           
